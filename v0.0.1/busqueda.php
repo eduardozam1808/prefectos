@@ -1,5 +1,5 @@
 <?php
-include_once './Server/Server.php';
+include_once '../Server/Server.php';
 $objServer = new Server();
 $hora = "07:00:00";
 $buscar = $_POST['aBuscar'];

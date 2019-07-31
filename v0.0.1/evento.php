@@ -1,5 +1,5 @@
 <?php
-include_once './Server/Server.php';
+include_once '../Server/Server.php';
 $objServer = new Server();
 
 $id = $_POST['id'];

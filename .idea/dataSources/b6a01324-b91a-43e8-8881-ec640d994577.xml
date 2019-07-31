@@ -1322,106 +1322,172 @@
     </collation>
     <table id="332" parent="3" name="asistencia"/>
     <table id="333" parent="3" name="insidencias"/>
-    <column id="334" parent="332" name="id">
+    <table id="334" parent="3" name="usuarios"/>
+    <table id="335" parent="3" name="versiones"/>
+    <column id="336" parent="332" name="id">
       <Position>1</Position>
       <DataType>int(30)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="332" name="aula">
+    <column id="337" parent="332" name="aula">
       <Position>2</Position>
       <DataType>int(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="332" name="grupo">
+    <column id="338" parent="332" name="grupo">
       <Position>3</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="332" name="carrera">
+    <column id="339" parent="332" name="carrera">
       <Position>4</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="332" name="optativa">
+    <column id="340" parent="332" name="optativa">
       <Position>5</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="332" name="catedratico">
+    <column id="341" parent="332" name="catedratico">
       <Position>6</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="332" name="horario">
+    <column id="342" parent="332" name="horario">
       <Position>7</Position>
       <DataType>time|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="332" name="noFalto">
+    <column id="343" parent="332" name="noFalto">
       <Position>8</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="332" name="siFalto">
+    <column id="344" parent="332" name="siFalto">
       <Position>9</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="332" name="retardo">
+    <column id="345" parent="332" name="retardo">
       <Position>10</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="332" name="minTarde">
+    <column id="346" parent="332" name="minTarde">
       <Position>11</Position>
       <DataType>time|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="332" name="intento">
+    <column id="347" parent="332" name="intento">
       <Position>12</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="346" parent="332" name="PRIMARY">
+    <key id="348" parent="332" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="347" parent="333" name="id">
+    <column id="349" parent="333" name="id">
       <Position>1</Position>
       <DataType>int(30)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="333" name="aula">
+    <column id="350" parent="333" name="aula">
       <Position>2</Position>
       <DataType>int(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="333" name="grupo">
+    <column id="351" parent="333" name="grupo">
       <Position>3</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="350" parent="333" name="carrera">
+    <column id="352" parent="333" name="carrera">
       <Position>4</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="351" parent="333" name="jefeGrupo">
+    <column id="353" parent="333" name="jefeGrupo">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="333" name="descripcionReporte">
+    <column id="354" parent="333" name="descripcionReporte">
       <Position>6</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="353" parent="333" name="PRIMARY">
+    <key id="355" parent="333" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="356" parent="334" name="id">
+      <Position>1</Position>
+      <DataType>int(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="357" parent="334" name="correo">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="358" parent="334" name="contrasena">
+      <Position>3</Position>
+      <DataType>varchar(150)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="359" parent="334" name="nombre">
+      <Position>4</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="360" parent="334" name="apellido">
+      <Position>5</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="361" parent="334" name="plantel">
+      <Position>6</Position>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="362" parent="334" name="rol">
+      <Position>7</Position>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="363" parent="334" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="364" parent="335" name="id">
+      <Position>1</Position>
+      <DataType>int(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="365" parent="335" name="version">
+      <Position>2</Position>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="366" parent="335" name="estable">
+      <Position>3</Position>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="367" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
