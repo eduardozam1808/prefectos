@@ -1,7 +1,7 @@
 <?php
 include_once '../Server/Server.php';
 $objServer = new Server();
-$hora = "07:00:00";
+$hora = $_POST['hora'];
 $buscar = $_POST['aBuscar'];
 if ($buscar === '') {
     ?>
