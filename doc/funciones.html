@@ -10,8 +10,8 @@
 <div style="width: 100%; height: 20px;"></div>
 <h1 style="font-weight: 100;" class="text-center text-black-50">Sistema prefectos</h1>
 <div class="container">
-
-    <h3>funcion guradarTiempoRetardo()</h3>
+    <hr>
+    <h3>funcion guardarTiempoRetardo()</h3>
     <p>Esta funcion guarda el tiempo de retardo que se agrega en el campo texto</p>
     <pre style="background-color: #fafafa;">
            <code  class="text-black-50">
@@ -30,6 +30,38 @@
                          }
                        ).responseText;
                }
+   </code>
+    </pre>
+
+    <h3>funcion CerrarModal()</h3>
+    <p>Esta funcion cierra el modal de retardo</p>
+    <pre style="background-color: #fafafa;">
+           <code  class="text-black-50">
+      function CerrarModal() {
+        $('#modalTiempo').css('display', 'none');
+    }
+   </code>
+    </pre>
+
+
+
+    <h3>funcion seleccionar()</h3>
+    <p>Esta funcion, es para saber en que check box se dio click</p>
+    <p>Recupera el id del registro y la opcion </p>
+    <pre style="background-color: #fafafa;">
+           <code  class="text-black-50">
+     function seleccionar(id, opc) {
+        $('#idd').text(id);
+        let parametro = {"id": id, "opc": opc};
+        $.ajax({
+            type: "POST",
+            url: "evento.php",
+            data: parametro,
+            success: function (response) {
+                $("#resultado").html(response);
+            }
+        }).responseText;
+    }
    </code>
     </pre>
 

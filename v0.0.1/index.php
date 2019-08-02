@@ -1,4 +1,5 @@
 <?php
+
 include_once '../Server/Server.php';
 $objServer = new Server();
 ?>
@@ -23,6 +24,10 @@ $objServer = new Server();
 </head>
 
 <body>
+<center>
+    <div style="display: none;" id="tiempoRespuesta"></div>
+    <h1 style="display: none;" id="hora">08:00:00</h1>
+</center>
 <!-- Start: Navbar White -->
 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
     <div class="container-fluid"><img src="assets/img/logo-udl2.png" style="width: 144px;">
@@ -195,6 +200,26 @@ $objServer = new Server();
 <script src="assets/js/theme.js"></script>
 <script src="assets/js/ajaxLib.js"></script>
 <script>
+
+
+
+
+
+    function tiempo() {
+
+        $.ajax(
+            {
+                type: 'POST',
+                url: './tiempo/tiempo.php',
+                success:function (respuesta) {
+                    $('#tiempoRespuesta').html(respuesta);
+                }
+            }
+        ).responseText;
+    }
+
+    setInterval('tiempo()',1000);
+
     function guardarTiempoRetardo() {
         let tiempo = $('#tiempoRetardo').val();
         let id = $('#idd').text();
@@ -231,9 +256,10 @@ $objServer = new Server();
     try {
         $("#inputtt").on('keyup', function () {
             let aBuscar = $("#inputtt").val();
-
+            let hora =$('#hora').text();
             let parametro = {
-                "aBuscar": aBuscar
+                "aBuscar": aBuscar,
+                "hora":hora
 
             };
             $.ajax({
