@@ -111,11 +111,82 @@ $objServer = new Server();
     </div>
 </div>
 
+<!--Modal Incidencias-->
+<div id="myModal_Incidencias" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background: #17a673; color: #f7f7f7; justify-content: center!important;">
+                <h4 class="modal-title" style="font-size: 16px; position: absolute;">REPORTE DE INCIDENCIAS</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <select class="form-control" id="select_grupo" onchange="select_grupo();">
+                    <option value="">Grupos</option>
+                    <?php
+                    require_once '../Server/Server.php';
+                    $query = "SELECT *from asistencia";
+                    $ejecutarQuery = mysqli_query($objServer->connection(),$query);
 
-<div id="navBooton" style="height: 56px;background-color: #323232;color: rgb(244,244,244);"><i
-            class="icon ion-ios-list-outline"
-            style="margin-right: 235px;margin-left: 229px;margin-top: 19px;font-size: 31px;"></i><i
-            class="icon ion-ios-paper-outline" style="font-size: 31px;"></i></div>
+                    while($datos = mysqli_fetch_assoc($ejecutarQuery)){
+                        ?>
+                        <option value="<?php echo  $datos['id']?>"><?php echo $datos['grupo'] ?></option>
+                        <?php
+                    }
+                    ?>
+                </select>
+                <?php
+                    ?>
+                <?php
+                ?>
+                <div id="panel_incidencias"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" onclick="btn_guardarIncidencias();" class="btn btn-success" data-dismiss="modal">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <div class="middle">
+                    <a class="btn" href="#">
+                        <i class="fas fa-home"></i>
+                    </a>
+
+                    <div class="btn" href="#"  style="cursor: pointer" data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <a class="btn" href="#">
+                        <i class="fas fa-user-check"></i>
+                    </a>
+                    <a class="btn" href="#">
+                        <i class="fas fa-balance-scale"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-6 sesion">
+                <div class="middle2">
+                    <a class="btn" href="#">
+                        <i class="fas fa-times-circle fa-2x"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/chart.min.js"></script>
@@ -175,6 +246,54 @@ $objServer = new Server();
             }).responseText;
         }).keyup();
     } catch (e) {
+    }
+
+
+    function select_grupo() {
+        let id = $("#select_grupo").val();
+        //alert(" Hola "+ id);
+        let param = {id:id};
+        $.ajax({
+            type: "POST",
+            url:"modelo/modelo_mostrar_datos.php",
+            data: param,
+            beforeSend: function(objeto){
+            },
+            success: function(data)
+            {
+
+                $("#panel_incidencias").html(data);
+            }
+        });
+    }()
+    
+    function btn_guardarIncidencias() {
+        let grupo = $('#select_grupo').val();
+        let aula = $('#aula').val();
+        let carrera = $('#carrera').val();
+        let catedratico = $('#catedratico').val();
+        let horario = $('#hora').val();
+        let jefeGrupo = $('#jefeG').val();
+        let reporte = $('#reporte').val();
+
+        let ob = {grupo:grupo, aula:aula, carrera:carrera, catedratico:catedratico, horario:horario, jefeGrupo:jefeGrupo, reporte:reporte};
+
+        $.ajax({
+            type: "POST",
+            url:"modelo/modelo_guardarIncidencias.php",
+            data: ob,
+            beforeSend: function(objeto){
+
+            },
+            success: function(data)
+            {
+
+                $("#panel_incidencias").html(data);
+
+
+            }
+
+        });
     }
 
 
