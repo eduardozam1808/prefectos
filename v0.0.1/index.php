@@ -291,7 +291,7 @@ $objServer = new Server();
                 $("#panel_incidencias").html(data);
             }
         });
-    }()
+    }
     
     function btn_guardarIncidencias() {
         let grupo = $('#select_grupo').val();
