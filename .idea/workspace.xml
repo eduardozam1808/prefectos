@@ -47,12 +47,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\prefectos\assets\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\prefectos\sql" />
       <recent name="C:\xampp\htdocs\prefectos" />
       <recent name="C:\xampp\htdocs\prefectos\v0.0.1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\prefectos\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,11 +77,6 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@49ef16a5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@49ef16a5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@42d57587" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
           </expand>
           <select />
         </treeState>
@@ -103,7 +99,7 @@
       <workItem from="1564665889408" duration="2866000" />
       <workItem from="1564683126437" duration="1445000" />
       <workItem from="1564701350480" duration="2127000" />
-      <workItem from="1564761619570" duration="2714000" />
+      <workItem from="1564761619570" duration="3811000" />
     </task>
     <servers />
   </component>
