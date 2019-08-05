@@ -8,7 +8,7 @@
                         <i class="fas fa-home"></i>
                     </a>
 
-                    <div class="btn" href="#"  style="cursor: pointer" data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">
+                    <div class="btn" href="#"  style="cursor: pointer" onclick="tablaAsistencia();">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
                     <div class="btn" style="cursor: pointer;" href="#" onclick="tablaMaestros();">

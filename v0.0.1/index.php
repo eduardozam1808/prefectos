@@ -14,7 +14,8 @@ $objServer = new Server();
     <div class="divider"></div>
     <div class="input-group">
         <div class="input-group-prepend"><span class="input-group-text">Buscar&nbsp;</span></div>
-        <input class="form-control" type="text" id="inputtt">
+        <input class="form-control mr-2" type="text" id="inputtt">
+        <button class="btn btn-outline-danger" data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">Levantar Reporte</button>
         <div class="input-group-append"></div>
     </div>
 
@@ -59,16 +60,18 @@ $objServer = new Server();
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <select class="form-control" onchange="select_grupo();">
+                <select id="select_grupo" class="form-control" onchange="select_grupo();">
                     <option value="">Grupos</option>
                     <?php
                     require_once '../Server/Server.php';
-                    $query = "SELECT *from asistencia";
+                    $query = "SELECT * from asistencia";
                     $ejecutarQuery = mysqli_query($objServer->connection(),$query);
 
-                    while($datos = mysqli_fetch_assoc($ejecutarQuery)){
+                    while($datos = mysqli_fetch_array($ejecutarQuery)){
+                        $id = $datos['id'];
+                        $grupo = $datos['grupo'];
                         ?>
-                        <option id="select_grupo" value="<?php echo  $datos['id']?>"><?php echo $datos['grupo'] ?></option>
+                        <option  value="<?php echo  $id?>"><?php echo $grupo?></option>
                         <?php
                     }
                     ?>
@@ -205,7 +208,7 @@ $objServer = new Server();
             type: "POST",
             url:"modelo/modelo_guardarIncidencias.php",
             data: ob,
-            beforeSend: function(objeto){
+            beforeSend: function(ob){
 
             },
             success: function(data)
@@ -224,8 +227,13 @@ $objServer = new Server();
         document.getElementById('tabla2').style.display = 'block';
         document.getElementById('busqueda-maestros').style.display = 'block';
 
-
-
+    }
+    
+    function tablaAsistencia() {
+        document.getElementById('tabla-asistencia').style.display = 'block';
+        document.getElementById('busqueda-asistencia').style.display = 'block';
+        document.getElementById('tabla2').style.display = 'none';
+        document.getElementById('busqueda-maestros').style.display = 'none';
     }
 
 

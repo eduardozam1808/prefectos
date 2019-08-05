@@ -14,7 +14,7 @@ $objServer = new Server();
             <span class="input-group-text">Buscar&nbsp;</span>
         </div>
         <input class="form-control mr-3" type="text" id="inputtt">
-        <button class="btn btn-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
+        <button class="btn btn-outline-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
         <div class="input-group-append"></div>
     </div>
 
@@ -64,20 +64,7 @@ $objServer = new Server();
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <select class="form-control" onchange="select_grupo();">
-                        <option value="">Grupos</option>
-                        <?php
-                        require_once '../Server/Server.php';
-                        $query = "SELECT *from asistencia";
-                        $ejecutarQuery = mysqli_query($objServer->connection(),$query);
 
-                        while($datos = mysqli_fetch_assoc($ejecutarQuery)){
-                            ?>
-                            <option id="select_grupo" value="<?php echo  $datos['id']?>"><?php echo $datos['grupo'] ?></option>
-                            <?php
-                        }
-                        ?>
-                    </select>
 
                     <div id="panel_incidencias"></div>
                 </div>
