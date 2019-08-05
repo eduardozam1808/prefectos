@@ -1,11 +1,12 @@
 <?php
 include_once '../Server/Server.php';
 $objServer = new Server();
-$hora = $_POST['hora'];
+//$hora = $_POST['hora'];
+$hora = $hora = "07:00:00";
 $buscar = $_POST['aBuscar'];
 if ($buscar === '') {
     ?>
-    <div class="table-responsive text-center" style="margin-top: 28px;">
+    <div id="tabla-asistencia" class="table-responsive text-center mt-4" >
         <table class="table table-striped table-hover">
             <thead class="" style="background: #2d2e33; color: #ffffff;">
             <tr>
@@ -82,6 +83,11 @@ if ($buscar === '') {
 
 
     </div>
+
+
+
+
+
     <?php
 } else {
 
@@ -162,5 +168,7 @@ if ($buscar === '') {
 
 
     </div>
+
     <?php
 }
+

@@ -8,6 +8,14 @@
   width: 100%;
 }
 
+#navegador{
+  background: linear-gradient(120deg, #1cc88a, #014f37);
+}
+
+h1,h2{
+  font-family: serif;
+}
+
 
 .fas-2x{
   font-size: 2em;
@@ -87,6 +95,14 @@ footer{
   position: fixed;
   bottom: 0;
 
+}
+
+.divider{
+  background-color: #17a673;
+  height: 3px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 .container-footer-all{
