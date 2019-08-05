@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="" />
+    <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarMaestro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/plantillas/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/plantillas/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/view_maesros.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/view_maesros.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +54,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prefectos2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\prefectos\assets\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\prefectos\v0.0.1\plantillas" />
       <recent name="C:\xampp\htdocs\prefectos\v0.0.1\tiempo" />
       <recent name="C:\xampp\htdocs\prefectos\Server" />
       <recent name="C:\xampp\htdocs\prefectos\sql" />
       <recent name="C:\xampp\htdocs\prefectos" />
-      <recent name="C:\xampp\htdocs\prefectos\v0.0.1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\prefectos\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,7 +94,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@49ef16a5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2bbc98ba" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2bbc98ba" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@18c0b1bf" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -110,7 +126,9 @@
       <workItem from="1564761619570" duration="9780000" />
       <workItem from="1565011604581" duration="3640000" />
       <workItem from="1565017937833" duration="1383000" />
-      <workItem from="1564983322130" duration="3035000" />
+      <workItem from="1564983322130" duration="3652000" />
+      <workItem from="1564989812380" duration="649000" />
+      <workItem from="1565044253696" duration="4569000" />
     </task>
     <servers />
   </component>

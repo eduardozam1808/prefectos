@@ -14,7 +14,7 @@
                     <div class="btn" style="cursor: pointer;" href="#" onclick="tablaMaestros();">
                         <i class="fas fa-user-check"></i>
                     </div>
-                    <a class="btn" href="view_maesros.php">
+                    <a class="btn" href="../view_maesros.php">
                         <i class="fas fa-balance-scale"></i>
                     </a>
 

@@ -4,6 +4,7 @@ include_once '../Server/Server.php';
 
 
 $objServer = new Server();
+
 ?>
 <!-- End: Navbar White -->
 <div id="busqueda-maestros" class="container" style="display: none;">
@@ -65,15 +66,70 @@ $objServer = new Server();
                 </div>
                 <div class="modal-body">
 
-
+                    <label>Clave:</label>
+                    <input type="text" id="clave"><br>
+                    <label>Titulo</label>
+                    <select id="titulo">
+                        <option value="LIC">LIC</option>
+                        <option value="ING">ING</option>
+                    </select><br>
+                    <label>Nombre</label>
+                    <input type="text" id="nombre"><br>
+                    <label>Apellido</label>
+                    <input type="text" id="apellido"><br>
+                    <label>Tel.Celular</label>
+                    <input type="tel" id="celular"><br>
+                    <label>Tel.Casa</label>
+                    <input type="tel" id="casa"><br>
+                    <label>Tel.Oficina</label>
+                    <input type="tel" id="oficina"><br>
+                    <label>Correo</label>
+                    <input type="email" id="correo">
                     <div id="panel_incidencias"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" onclick="btn_guardarIncidencias();" class="btn btn-success" data-dismiss="modal">Guardar</button>
+                    <button type="button" onclick="guardarMaestro();" class="btn btn-success" data-dismiss="modal">Guardar</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+
+    function guardarMaestro() {
+         let clave  = $('#clave').val();
+          let nombre = $('#nombre').val();
+        let apellido = $('#apellido').val();
+        let titulo  = $('#titulo').val();
+        let telCelular = $('#celular').val();
+        let telCasa = $('#casa').val();
+        let telOficina  = $('#oficina').val();
+        let correo = $('#correo').val();
+
+        let parametro = {
+          "clave":clave,
+          "nombre":nombre,
+          "apellido":apellido,
+            "titulo":titulo,
+          "telCelular":telCelular,
+          "telCasa":telCasa,
+          "telOficina":telOficina,
+          "correo":correo
+        };
+        $.ajax(
+            {
+                type:"POST",
+                url:"modelo/modelo_guardarMaestro.php",
+                data:parametro,
+                success: function (respuesta) {
+                    $('#panel_incidencias').html(respuesta);
+                }
+            }
+        ).responseText;
+    }
+
+
+</script>
 

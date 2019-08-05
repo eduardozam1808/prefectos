@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
     <style>
         .modal-backdrop {
             background-color: rgba(0, 0, 0, 0.6);
@@ -25,7 +25,7 @@
 </center>
 <!-- Start: Navbar White -->
 <nav id="navegador" class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-    <div class="container-fluid"><img src="assets/img/logo-blanco.png" style="width: 144px;">
+    <div class="container-fluid"><img src="../assets/img/logo-blanco.png" style="width: 144px;">
         <ul class="nav navbar-nav flex-nowrap ml-auto">
             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                                 aria-expanded="false" href="#"><i
@@ -53,7 +53,7 @@
             <li class="nav-item dropdown no-arrow">
                 <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
                     <span style="color: #ffffff" class="d-none d-lg-inline mr-2 small">Eduardo Jesus Zamora</span>
-                    <img class="border rounded-circle img-profile" src="assets/img/avatars/avatar5.jpeg">
+                    <img class="border rounded-circle img-profile" src="../assets/img/avatars/avatar5.jpeg">
                 </a>
                 <div
                     class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a

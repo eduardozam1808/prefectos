@@ -6,7 +6,7 @@ include_once '../Server/Server.php';
 $objServer = new Server();
 ?>
 
-<?php require 'header.php' ?>
+<?php require './plantillas/header.php' ?>
 
 <!-- End: Navbar White -->
 <div id="busqueda-asistencia" class="container">
@@ -89,7 +89,9 @@ $objServer = new Server();
 
 
 <?php require 'view_maesros.php' ?>
-<?php require 'footer.php' ?>
+<?php
+    include_once 'plantillas/footer.php';
+?>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
