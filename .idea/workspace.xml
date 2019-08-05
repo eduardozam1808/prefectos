@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="" />
+    <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarIncidencias.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarIncidencias.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +112,7 @@
       <workItem from="1564701350480" duration="2127000" />
       <workItem from="1564761619570" duration="9780000" />
       <workItem from="1565011604581" duration="408000" />
+      <workItem from="1565025874038" duration="130000" />
     </task>
     <servers />
   </component>
