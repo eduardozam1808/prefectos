@@ -205,9 +205,7 @@ $objServer = new Server();
             type: "POST",
             url:"modelo/modelo_guardarIncidencias.php",
             data: ob,
-            beforeSend: function(objeto){
 
-            },
             success: function(data)
             {
 

@@ -65,6 +65,40 @@
    </code>
     </pre>
 
+    <h3>funcion btn_guardarIncidencias()</h3>
+    <p>Esta funcion, es para guardar el reporte de incidencias en la base de datos</p>
+
+    <pre style="background-color: #fafafa;">
+           <code  class="text-black-50">
+     function btn_guardarIncidencias() {
+        let id = $("#id").val();
+        let grupo = $('#select_grupo').val();
+        let aula = $('#aula').val();
+        let carrera = $('#carrera').val();
+        let catedratico = $('#catedratico').val();
+        let horario = $('#hora').val();
+        let jefeGrupo = $('#jefeG').val();
+        let reporte = $('#reporte').val();
+
+        let ob = {id:id, grupo:grupo, aula:aula, carrera:carrera, catedratico:catedratico, horario:horario, jefeGrupo:jefeGrupo, reporte:reporte};
+
+        $.ajax({
+            type: "POST",
+            url:"modelo/modelo_guardarIncidencias.php",
+            data: ob,
+
+            success: function(data)
+            {
+
+                $("#panel_incidencias").html(data);
+
+            }
+
+        });
+    }
+   </code>
+    </pre>
+
 </div>
 
 
