@@ -6,7 +6,7 @@ include_once '../Server/Server.php';
 $objServer = new Server();
 ?>
 
-<?php require './plantillas/header.php' ?>
+<?php require 'header.php' ?>
 
 <!-- End: Navbar White -->
 <div id="busqueda-asistencia" class="container">

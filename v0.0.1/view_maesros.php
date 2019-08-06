@@ -56,8 +56,8 @@ $objServer = new Server();
     </table>
 
     <!--Modal Incidencias-->
-    <div id="myModal_Profesores" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+    <div id="myModal_Profesores" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header" style="background: #17a673; color: #f7f7f7; justify-content: center!important;">
@@ -65,27 +65,66 @@ $objServer = new Server();
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Clave</span>
+                                </div>
+                                <input id="clave" type="text" class="form-control" placeholder="Clave" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                </div>
+                                <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Apellido</span>
+                                </div>
+                                <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Titulo</label>
+                                </div>
+                                <select class="custom-select" id="titulo">
+                                    <option value="ING">ING</option>
+                                    <option value="LIC">LIC</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Tel.Celular</span>
+                                </div>
+                                <input id="celular" type="text" class="form-control" placeholder="Tel:Celular" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Tel.Casa</span>
+                                </div>
+                                <input id="casa" type="text" class="form-control" placeholder="Tel:Casa" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Tel.Oficina</span>
+                                </div>
+                                <input id="oficina" type="text" class="form-control" placeholder="Tel:Oficina" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Correo</span>
+                                </div>
+                                <input id="correo" type="text" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img src="assets/img/Reporte%20I.png" style="width: 330px; position: absolute; top: 40px; left: 0" alt="">
+                        </div>
+                    </div>
+                    <div id="panel_maestros"></div>
 
-                    <label>Clave:</label>
-                    <input type="text" id="clave"><br>
-                    <label>Titulo</label>
-                    <select id="titulo">
-                        <option value="LIC">LIC</option>
-                        <option value="ING">ING</option>
-                    </select><br>
-                    <label>Nombre</label>
-                    <input type="text" id="nombre"><br>
-                    <label>Apellido</label>
-                    <input type="text" id="apellido"><br>
-                    <label>Tel.Celular</label>
-                    <input type="tel" id="celular"><br>
-                    <label>Tel.Casa</label>
-                    <input type="tel" id="casa"><br>
-                    <label>Tel.Oficina</label>
-                    <input type="tel" id="oficina"><br>
-                    <label>Correo</label>
-                    <input type="email" id="correo">
-                    <div id="panel_incidencias"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -99,8 +138,8 @@ $objServer = new Server();
 <script>
 
     function guardarMaestro() {
-         let clave  = $('#clave').val();
-          let nombre = $('#nombre').val();
+        let clave  = $('#clave').val();
+        let nombre = $('#nombre').val();
         let apellido = $('#apellido').val();
         let titulo  = $('#titulo').val();
         let telCelular = $('#celular').val();
@@ -109,14 +148,14 @@ $objServer = new Server();
         let correo = $('#correo').val();
 
         let parametro = {
-          "clave":clave,
-          "nombre":nombre,
-          "apellido":apellido,
+            "clave":clave,
+            "nombre":nombre,
+            "apellido":apellido,
             "titulo":titulo,
-          "telCelular":telCelular,
-          "telCasa":telCasa,
-          "telOficina":telOficina,
-          "correo":correo
+            "telCelular":telCelular,
+            "telCasa":telCasa,
+            "telOficina":telOficina,
+            "correo":correo
         };
         $.ajax(
             {
@@ -124,7 +163,7 @@ $objServer = new Server();
                 url:"modelo/modelo_guardarMaestro.php",
                 data:parametro,
                 success: function (respuesta) {
-                    $('#panel_incidencias').html(respuesta);
+                    $('#panel_maestros').html(respuesta);
                 }
             }
         ).responseText;
