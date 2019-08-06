@@ -246,9 +246,29 @@ $objServer = new Server();
         document.getElementById('tabla2').style.display = 'none';
         document.getElementById('busqueda-maestros').style.display = 'none';
     }
+    
+    function btn_editarMaestro() {
+        let ob = {"id": id};
+
+        $.ajax({
+            type: "POST",
+            url:"view/vista_editar_maestro.php",
+            data: ob,
+            beforeSend: function(objeto){
+
+            },
+            success: function(data)
+            {
+
+                $("#panel_edicion").html(data);
+
+            }
+        });
+    }
 
 
 </script>
 </body>
 
 </html>
+

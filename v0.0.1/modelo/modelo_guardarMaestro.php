@@ -14,7 +14,15 @@
 
     $query = "INSERT INTO maestros (clave, nombre, apellido, telCelular, telCasa, telOficina, titulo, correo) VALUES ('$clave','$nombre','$apellido','$telCelular','$telCasa','$telOficina','$titulo','$correo')";
     if($ejecutarQuery = mysqli_query($objServer->connection(),$query)){
-        echo "Exito..";
+        ?>
+        <script>
+            swal("Enviado", "Su registro se envio correctamente", "success")
+        </script>
+        <?php
     }else{
-        echo "fallo..";
+        ?>
+        <script>
+            swal("Error", "El registro no se realizo correctamente", "error");
+        </script>
+        <?php
     }
