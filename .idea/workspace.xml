@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c11cd0f6-5436-46da-8c68-a211d2c32d78.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v0.0.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarMaestro.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarMaestro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/plantillas/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/view_maesros.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/view_maesros.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +124,7 @@
       <workItem from="1564983322130" duration="3652000" />
       <workItem from="1564989812380" duration="649000" />
       <workItem from="1565044253696" duration="4569000" />
-      <workItem from="1565101770654" duration="6061000" />
+      <workItem from="1565101770654" duration="7844000" />
     </task>
     <servers />
   </component>

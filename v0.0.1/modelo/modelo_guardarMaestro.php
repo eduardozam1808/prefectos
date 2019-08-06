@@ -18,5 +18,3 @@
     }else{
         echo "fallo..";
     }
-
-echo 'HOLA';

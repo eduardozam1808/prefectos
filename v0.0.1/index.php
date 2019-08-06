@@ -87,14 +87,23 @@ $objServer = new Server();
     </div>
 </div>
 
+<!--<button onclick="enviar()" class="btn btn-dark">Enviar</button>-->
+
 
 <?php require 'view_maesros.php' ?>
 <?php
     include_once 'plantillas/footer.php';
 ?>
 
+<!--<script>
+    function enviar() {
+        swal("Good job!", "You clicked the button!", "success")
+    }
+
+</script>-->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/sweetalert/dist/sweetalert.min.js"></script>
 <script src="assets/js/chart.min.js"></script>
 <script src="assets/js/bs-charts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>

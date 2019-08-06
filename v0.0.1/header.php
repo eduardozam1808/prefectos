@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/sweetalert/dist/sweetalert.css">
     <style>
         .modal-backdrop {
             background-color: rgba(0, 0, 0, 0.6);
