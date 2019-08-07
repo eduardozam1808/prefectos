@@ -36,13 +36,14 @@
                     echo "<td>" . $datos['telefonoOficina'] . "</td>";
                     echo "<td>" . $datos['titulo'] . "</td>";
                     echo "<td>" . $datos['correo'] . "</td>";
-                    echo "<td><div class=\"btn\" data-backdrop=\"static\" data-toggle=\"modal\" data-target=\"#myModal_Profesores_Editar\" style=\"cursor: pointer;\"><i class=\"fas fa-edit\"></i></div></td>";
+                    echo "<td><div   onclick='modificar(".$datos['id'].")' style=\"cursor: pointer;\"><i class=\"fas fa-edit\"></i></div></td>";
                     echo "<td><div class=\"btn\" style=\"cursor: pointer;\"><i class=\"fas fa-trash-alt\"></i></div></td>";
                     echo "</tr>";
                 }
             ?>
             </tbody>
         </table>
+
         </div>
         <?php
     }else{

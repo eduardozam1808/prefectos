@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/v0.0.1/plantillas/modalMaestros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/retardo.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/retardo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/busquedaMaestro.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/busquedaMaestro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/view_maesros.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/view_maesros.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +47,7 @@
   <component name="ProjectId" id="1OmZOAWZfX7eri6lVdtMeesIeXq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -88,7 +91,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5b94438" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1e4774b7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1e4774b7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@28e5447" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -119,7 +127,7 @@
       <workItem from="1564989812380" duration="649000" />
       <workItem from="1565044253696" duration="4569000" />
       <workItem from="1565101770654" duration="16353000" />
-      <workItem from="1565192357962" duration="5845000" />
+      <workItem from="1565192357962" duration="11709000" />
     </task>
     <servers />
   </component>
