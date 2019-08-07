@@ -13,7 +13,7 @@ $ejecutarQuery0 = mysqli_query($objServer->connection(),$sql0);
 $dato = mysqli_fetch_assoc($ejecutarQuery0);
 $newgrupo = $dato['grupo'];
 //$sql ="UPDATE insidencias set grupo = $grupo, aula = $aula, carrera = $carrera, jefeGrupo= $jefeGrupo, descripcionReporte = $reporte where id = $id";
-$sql = "INSERT INTO insidencias (grupo, aula, carrera, jefegrupo, descripcionreporte) VALUES ('$newgrupo', '$aula', '$carrera', '$jefeGrupo', '$reporte')";
+$sql = "INSERT INTO insidencias (grupo, aula, carrera, jefeGrupo, descripcionReporte) VALUES ('$newgrupo', '$aula', '$carrera', '$jefeGrupo', '$reporte')";
 
 if($ejecutarQuery = mysqli_query($objServer->connection(),$sql)){
     ?>

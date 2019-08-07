@@ -3,43 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="24ff0429-f560-4fc9-93fe-c05d5f27200e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/asistenciaprefectos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/asistenciaprefectos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/Gruntfile.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/Gruntfile.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/assets/docs.css" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/assets/docs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/bootstrap/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/bootstrap/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/bootstrap/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/bootstrap/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/gulpfile-wrap-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/gulpfile-wrap-template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/ie9.css" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/ie9.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/loader-animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/loader-animation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/default-params.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/default-params.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-click.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-click.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-key.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-key.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-swal-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/handle-swal-dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/injected-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/injected-html.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/set-params.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/set-params.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/modules/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/sweetalert.es6.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dev/sweetalert.es6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dist/sweetalert.css" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dist/sweetalert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dist/sweetalert.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/dist/sweetalert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/lib/sweet-alert-animations.less" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/lib/sweet-alert-animations.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/lib/sweet-alert-combine.less" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/lib/sweet-alert-combine.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/lib/sweet-alert.less" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/lib/sweet-alert.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/test/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/assets/sweetalert/test/tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/busqueda.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/busqueda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v0.0.1/busquedaMaestro.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/busquedaMaestro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarIncidencias.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarIncidencias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarMaestro.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/modelo/modelo_guardarMaestro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v0.0.1/view_maesros.php" beforeDir="false" afterPath="$PROJECT_DIR$/v0.0.1/view_maesros.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -155,7 +121,7 @@
       <workItem from="1564989812380" duration="649000" />
       <workItem from="1565044253696" duration="4569000" />
       <workItem from="1565101770654" duration="16353000" />
-      <workItem from="1565192357962" duration="2737000" />
+      <workItem from="1565192357962" duration="5378000" />
     </task>
     <servers />
   </component>

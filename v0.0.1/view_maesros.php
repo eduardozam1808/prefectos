@@ -16,9 +16,7 @@
 
 <div class="container table-responsive text-center"  id="tabla2" style="display: none;">
     <div id="tabla">
-
     </div>
-
     <!--Modal Profesores-->
     <div id="myModal_Profesores" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -112,22 +110,12 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-7">
-                        <?php
-                            require_once '../Server/Server.php';
-                            $objServer = new Server();
-                            $query = "SELECT * FROM maestros";
-                            $ejecutarQuery = mysqli_query($objServer->connection(),$query);
-                            while ($datos = mysqli_fetch_assoc($ejecutarQuery)){
 
-
-                            }
-
-                        ?>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Clave</span>
                             </div>
-                            <input value="<?php echo $datos['clave'];?>" id="clave" type="text" class="form-control" placeholder="Clave" aria-label="Username" aria-describedby="basic-addon1">
+                            <input id="clave" type="text" class="form-control" placeholder="Clave" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">

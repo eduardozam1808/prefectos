@@ -92,20 +92,20 @@ if ($buscar === '') {
 } else {
 
     ?>
-    <div class="table-responsive text-center" style="margin-top: 28px;">
-        <table class="table">
-            <thead>
+    <div id="tabla-asistencia" class="table-responsive text-center mt-4" >
+        <table class="table table-striped table-hover">
+            <thead class="" style="background: #2d2e33; color: #ffffff;">
             <tr>
-                <th>Aula</th>
-                <th>Grupo</th>
-                <th>Carrera</th>
-                <th>Optativa</th>
-                <th>Catedratico</th>
-                <th>Horario</th>
-                <th>No falto</th>
-                <th>Si Falto</th>
-                <th>Retardo</th>
-                <th>Min Tarde</th>
+                <th scope="col"><i class="fas fa-chalkboard-teacher"></i><br> Aula</th>
+                <th><img src='assets/img/class.png' style='width: 20px;' alt=''><br>Grupo</th>
+                <th><img src='assets/img/empleo.png' style='width: 20px;' alt=''><br>Carrera</th>
+                <th><img src='assets/img/idioma.png' style='width: 20px;' alt=''><br>Optativa</th>
+                <th scope="col"><i class="fas fa-user"></i><br>Catedratico</th>
+                <th scope="col"><i class="fas fa-hourglass-start"></i><br> Horario</th>
+                <th scope="col"><i class="fas fa-user-check"></i><br> No falto</th>
+                <th scope="col"><i class="fas fa-user-times"></i><br> Si falto</th>
+                <th scope="col"><i class="fas fa-user-minus"></i><br> Retardo</th>
+                <th scope="col"><i class="fas fa-user-clock"></i><br> Min Tarde</th>
             </tr>
             </thead>
             <tbody>
