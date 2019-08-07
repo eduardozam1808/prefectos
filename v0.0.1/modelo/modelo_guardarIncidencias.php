@@ -14,13 +14,19 @@ $dato = mysqli_fetch_assoc($ejecutarQuery0);
 $newgrupo = $dato['grupo'];
 //$sql ="UPDATE insidencias set grupo = $grupo, aula = $aula, carrera = $carrera, jefeGrupo= $jefeGrupo, descripcionReporte = $reporte where id = $id";
 $sql = "INSERT INTO insidencias (grupo, aula, carrera, jefegrupo, descripcionreporte) VALUES ('$newgrupo', '$aula', '$carrera', '$jefeGrupo', '$reporte')";
-$ejecutarQuery =mysqli_query($objServer->connection(),$sql);
 
-if ($ejecutarQuery === TRUE){
-    echo "<script>
-
-</script>";
-
+if($ejecutarQuery = mysqli_query($objServer->connection(),$sql)){
+    ?>
+    <script>
+        swal("Enviado", "Su registro se envio correctamente", "success")
+    </script>
+    <?php
+}else{
+    ?>
+    <script>
+        swal("Error", "El registro no se realizo correctamente", "error");
+    </script>
+    <?php
 }
 
 

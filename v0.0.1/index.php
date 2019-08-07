@@ -51,6 +51,7 @@ $objServer = new Server();
 </div>
 
 <!--Modal Incidencias-->
+<h1 style="display: block" id="idd2"></h1>
 <div id="myModal_Incidencias" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
@@ -246,26 +247,19 @@ $objServer = new Server();
         document.getElementById('tabla2').style.display = 'none';
         document.getElementById('busqueda-maestros').style.display = 'none';
     }
-    
-    function btn_editarMaestro() {
-        let ob = {"id": id};
 
+    function btn_editarMaestro(id) {
+
+        let parametro = {"id": id};
         $.ajax({
             type: "POST",
-            url:"view/vista_editar_maestro.php",
-            data: ob,
-            beforeSend: function(objeto){
-
-            },
-            success: function(data)
-            {
-
-                $("#panel_edicion").html(data);
-
+            url: "view_maesros.php",
+            data: parametro,
+            success: function (response) {
+                $("#resultado").html(response);
             }
-        });
+        }).responseText;
     }
-
 
 </script>
 </body>
