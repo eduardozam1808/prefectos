@@ -39,7 +39,12 @@ $objServer = new Server();
             </div>
             <div class="modal-body">
                 <p>Tiempo de retardo en minutos</p>
-                <input type="time" id="tiempoRetardo">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Tiempo de Retardo</span>
+                    </div>
+                    <input id="tiempoRetardo" type="text" class="form-control" placeholder="Tiempo Retardo" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" onclick="CerrarModal()" class="btn btn-secondary" data-dismiss="modal">Cancelar

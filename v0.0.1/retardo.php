@@ -1,7 +1,8 @@
 <?php
     include_once '../Server/Server.php';
     $objServer = new Server();
-    $tiempo = $_POST['tiempo'];
+    $tiempo = "00:";
+    $tiempo .= $_POST['tiempo'];
     $id = $_POST['id'];
 
     $query = "UPDATE asistencia set noFalto = 0, siFalto = 0, retardo = 1, minTarde = '$tiempo' WHERE id = '$id'";
