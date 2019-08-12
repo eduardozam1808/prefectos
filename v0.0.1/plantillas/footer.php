@@ -22,7 +22,7 @@
             </div>
             <div class="col-sm-4 sesion">
                 <div class="middle2">
-                    <a class="btn" href="#">
+                    <a class="btn" href="../index.php">
                         <i class="fas fa-times-circle fa-2x"></i>
                     </a>
                 </div>
