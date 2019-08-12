@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-8">
 
                 <div class="middle">
                     <a class="btn" href="#">
@@ -20,7 +20,7 @@
 
                 </div>
             </div>
-            <div class="col-6 sesion">
+            <div class="col-sm-4 sesion">
                 <div class="middle2">
                     <a class="btn" href="#">
                         <i class="fas fa-times-circle fa-2x"></i>

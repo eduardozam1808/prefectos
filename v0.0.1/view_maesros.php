@@ -3,12 +3,12 @@
 <div id="busqueda-maestros" class="container" style="display: none;">
     <h2 class="text-center" style="font-size: 37px;">Maestros&nbsp;</h2>
     <div class="divider"></div>
-    <div class="input-group mb-4 ">
+    <div class="input-group " style="margin-bottom: 22px;">
         <div class="input-group-prepend">
             <span class="input-group-text">Buscar&nbsp;</span>
         </div>
         <input class="form-control mr-3" type="text" id="busqueda">
-        <button class="btn btn-outline-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
+        <button class="boton btn btn-outline-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
         <div class="input-group-append"></div>
     </div>
 
@@ -18,7 +18,7 @@
     <div id="tabla">
     </div>
     <!--Modal Profesores-->
-    <div id="myModal_Profesores" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div id="myModal_Profesores" class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <!-- Modal content-->
             <div class="modal-content">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-md-12 col-lg-7">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Clave</span>
@@ -82,7 +82,7 @@
                                 <input id="correo" type="text" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="col-5 imagen-modal">
                             <img src="assets/img/Reporte%20I.png" style="width: 330px; position: absolute; top: 40px; left: 0" alt="">
                         </div>
                     </div>
@@ -191,5 +191,36 @@
     function cerrarModalMaestros() {
         $('#myModal_Profesores_Editar').css('display','none');
     }
+    
+    function eliminarMaestro(id) {
+        let ob = {'id':id};
+        swal({
+                title: "Esta seguro de cancelar",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "Aceptar",
+                cancelButtonText: "Cancelar",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function(isConfirm) {
+            if (isConfirm) {
+                swal("Modificado", "Modificacion Correcta", "success");
+                $.ajax({
+                        type:'POST',
+                        data:ob,
+                        url:'modelo/modelo_eliminar_maestro.php',
+                        success:function (respuesta) {
+                            $('#respuestaModal').html(respuesta);
+                        }
+                }
+                )
+            } else {
+                    swal("Cancelar", "Cancelacion correcta", "error");
+                }
+        });
+    }
 </script>
+
 

@@ -92,8 +92,8 @@ footer .btn::before{
 footer{
   width: 100%;
   background: #202020;
-  position: fixed;
   bottom: 0;
+  position: absolute;
 
 }
 
@@ -123,12 +123,21 @@ footer{
   background: #101010;
 }
 
-.footer{
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+.my-custom-scrollbar {
+  position: relative;
+  height: 485px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+
+.tabla-asistencia{
+  margin-top: 30px;
+  background: #f2f2f2;
+  padding:60px 0;
+  overflow: hidden;
 }
 
 .copyright{
@@ -154,5 +163,23 @@ footer{
   100%{
     top: -10%;
     left: -10%;
+  }
+}
+
+@media (max-width: 600px) {
+    .middle2{
+      text-align: left;
+    }
+    .boton{
+      width: 100%;
+      margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width: 990px) {
+  .imagen-modal{
+    display: none;
   }
 }

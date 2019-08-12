@@ -12,10 +12,10 @@ $objServer = new Server();
 <div id="busqueda-asistencia" class="container">
     <h1 class="text-center" style="font-size: 37px;">Asistencia&nbsp;</h1>
     <div class="divider"></div>
-    <div class="input-group">
+    <div class="input-group" style="margin-bottom: 14px;">
         <div class="input-group-prepend"><span class="input-group-text">Buscar&nbsp;</span></div>
         <input class="form-control mr-2" type="text" id="inputtt">
-        <button class="btn btn-outline-danger" data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">Levantar Reporte</button>
+        <button class="boton btn btn-outline-danger " data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">Levantar Reporte</button>
         <div class="input-group-append"></div>
     </div>
 
@@ -27,6 +27,7 @@ $objServer = new Server();
     </div>
 
 </div>
+
 <h1 style="display: none" id="idd"></h1>
 <div style='display: none' id='modalTiempo' class="modal modal-backdrop" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -97,6 +98,8 @@ $objServer = new Server();
 
 
 <?php require 'view_maesros.php' ?>
+
+
 <?php
     include_once 'plantillas/footer.php';
 ?>
@@ -265,6 +268,7 @@ $objServer = new Server();
             }
         }).responseText;
     }
+
 
 </script>
 </body>
