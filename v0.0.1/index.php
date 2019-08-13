@@ -15,7 +15,7 @@ $objServer = new Server();
     <div class="input-group" style="margin-bottom: 14px;">
         <div class="input-group-prepend"><span class="input-group-text">Buscar&nbsp;</span></div>
         <input class="form-control mr-2" type="text" id="inputtt">
-        <button class="boton btn btn-outline-danger " data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">Levantar Reporte</button>
+        <button class="boton btn btn-danger " data-backdrop="static" data-toggle="modal" data-target="#myModal_Incidencias">Levantar Reporte</button>
         <div class="input-group-append"></div>
     </div>
 

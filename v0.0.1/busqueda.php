@@ -7,7 +7,7 @@ $buscar = $_POST['aBuscar'];
 if ($buscar === '') {
     ?>
         <div id="tabla-asistencia" class="table-responsive text-center table-wrapper-scroll-y my-custom-scrollbar" >
-            <table class="table table-striped table-hover">
+            <table class="table table-dark table-hover">
                 <thead class="" style="background: #2d2e33; color: #ffffff;">
                 <tr>
                     <th scope="col"><i class="fas fa-chalkboard-teacher"></i><br> Aula</th>
@@ -38,31 +38,31 @@ if ($buscar === '') {
                         $checkName = 'asistencia' . $datos['id'];
                         switch ($datos['noFalto']) {
                             case 0:
-                                echo " <td><input type='radio' onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "'></td>";
+                                echo " <td><input class='option-input radio' type='radio' onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "'></td>";
                                 break;
                             case 1:
-                                echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "' checked></td>";
+                                echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "' checked></td>";
                                 break;
                         }
 
                         switch ($datos['siFalto']) {
                             case 0:
-                                echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "'></td>";
+                                echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "'></td>";
 
                                 break;
                             case 1:
-                                echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "' checked></td>";
+                                echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "' checked></td>";
 
                                 break;
                         }
 
                         switch ($datos['retardo']) {
                             case 0:
-                                echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "'></td>";
+                                echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "'></td>";
 
                                 break;
                             case 1:
-                                echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "' checked></td>";
+                                echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "' checked></td>";
 
                                 break;
                         }
@@ -94,7 +94,7 @@ if ($buscar === '') {
 
     ?>
     <div id="tabla-asistencia" class="table-responsive text-center table-wrapper-scroll-y my-custom-scrollbar" >
-        <table class="table table-striped table-hover">
+        <table class="table table-dark table-hover">
             <thead class="" style="background: #2d2e33; color: #ffffff;">
             <tr>
                 <th scope="col"><i class="fas fa-chalkboard-teacher"></i><br> Aula</th>
@@ -125,30 +125,30 @@ if ($buscar === '') {
                     $checkName = 'asistencia' . $datos['id'];
                     switch ($datos['noFalto']) {
                         case 0:
-                            echo " <td><input type='radio' onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "'></td>";
+                            echo " <td><input class='option-input radio' type='radio' onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "'></td>";
                             break;
                         case 1:
-                            echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "' checked></td>";
+                            echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",0)' name='" . $checkName . "' checked></td>";
                             break;
                     }
 
                     switch ($datos['siFalto']) {
                         case 0:
-                            echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "'></td>";
+                            echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "'></td>";
 
                             break;
                         case 1:
-                            echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "' checked></td>";
+                            echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",1)' name='" . $checkName . "' checked></td>";
 
                             break;
                     }
 
                     switch ($datos['retardo']) {
                         case 0:
-                            echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "'></td>";
+                            echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "'></td>";
                             break;
                         case 1:
-                            echo " <td><input type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "' checked></td>";
+                            echo " <td><input class='option-input radio' type='radio'  onclick='seleccionar(" . $datos['id'] . ",2)' name='" . $checkName . "' checked></td>";
 
                             break;
                     }

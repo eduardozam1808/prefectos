@@ -8,7 +8,7 @@
             <span class="input-group-text">Buscar&nbsp;</span>
         </div>
         <input class="form-control mr-3" type="text" id="busqueda">
-        <button class="boton btn btn-outline-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
+        <button class="boton btn btn-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
         <div class="input-group-append"></div>
     </div>
 
