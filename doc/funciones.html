@@ -1,75 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Funciones</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+
+    <!-- Responsive -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Documentación | Prefectos</title>
+
+    <!-- Stylesheets -->
+
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <link href="documentacion.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
 </head>
-<body>
-
-<div style="width: 100%; height: 20px;"></div>
-<h1 style="font-weight: 100;" class="text-center text-black-50">Sistema prefectos</h1>
-<div class="container">
-    <hr>
-    <h3>funcion guardarTiempoRetardo()</h3>
-    <p>Esta funcion guarda el tiempo de retardo que se agrega en el campo texto</p>
-    <pre style="background-color: #fafafa;">
-           <code  class="text-black-50">
-       function guardarTiempoRetardo() {
-               let tiempo = $('#tiempoRetardo').val();
-               let id = $('#idd').text();
-               let parametro = {"tiempo": tiempo, "id": id}
-                 $.ajax(
-                         {
-                             type: 'POST',
-                             url: 'retardo.php',
-                             data: parametro,
-                             success: function (response) {
-                                  $("#resultado").html(response);
-                             }
-                         }
-                       ).responseText;
-               }
-   </code>
-    </pre>
-
-    <h3>funcion CerrarModal()</h3>
-    <p>Esta funcion cierra el modal de retardo</p>
-    <pre style="background-color: #fafafa;">
-           <code  class="text-black-50">
-      function CerrarModal() {
-        $('#modalTiempo').css('display', 'none');
-    }
-   </code>
-    </pre>
 
 
 
-    <h3>funcion seleccionar()</h3>
-    <p>Esta funcion, es para saber en que check box se dio click</p>
-    <p>Recupera el id del registro y la opcion </p>
-    <pre style="background-color: #fafafa;">
-           <code  class="text-black-50">
-     function seleccionar(id, opc) {
-        $('#idd').text(id);
-        let parametro = {"id": id, "opc": opc};
-        $.ajax({
-            type: "POST",
-            url: "evento.php",
-            data: parametro,
-            success: function (response) {
-                $("#resultado").html(response);
-            }
-        }).responseText;
-    }
-   </code>
-    </pre>
+<body class="empty">
+
+
+
+<div class="page-wrapper">
+
+
+
+    <!-- Preloader -->
+
+    <div class="preloader"></div>
+    <main>
+        <section class="light_aviso">
+            <div class="light_container container">
+                <section class="light_header">
+                    <a href="index.html">
+                        <img src="logo-blanco.png" width="190px" height="auto" alt="Prefectos">
+                        <!-- Favicon -->
+                    </a>
+                    <h1 style="font-weight: 100; font-size: 30px;" class="text-center">Sistema Prefectos</h1>
+                </section>
+
+                <section class="light_row">
+
+                    <article class="form_txt">
+                        <h3>funcion guardarTiempoRetardo()</h3>
+                        <p>Esta funcion guarda el tiempo de retardo que se agrega en el campo texto</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50" >
+                                function guardarTiempoRetardo() {
+                                let tiempo = $('#tiempoRetardo').val();
+                                let id = $('#idd').text();
+                                let parametro = {"tiempo": tiempo, "id": id}
+                                $.ajax(
+                                {
+                                type: 'POST',
+                                url: 'retardo.php',
+                                data: parametro,
+                                success: function (response)
+                                {
+                                $("#resultado").html(response);
+                                }
+                                }
+                                ).responseText;
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion CerrarModal()</h3>
+                        <p>Esta funcion cierra el modal de retardo</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function CerrarModal() {
+                                $('#modalTiempo').css('display', 'none');
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion seleccionar()</h3>
+                        <p>Esta funcion, es para saber en que check box se dio click</p>
+                        <p>Recupera el id del registro y la opcion </p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function seleccionar(id, opc) {
+                                $('#idd').text(id);
+                                let parametro = {"id": id, "opc": opc};
+                                $.ajax({
+                                type: "POST",
+                                url: "evento.php",
+                                data: parametro,
+                                success: function (response) {
+                                $("#resultado").html(response);
+                                }
+                                }).responseText;
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion select_group()</h3>
+                        <p>Esta funcion, es para mostrar los datos del reporte de incidencias</p>
+                        <p>Recupera el grupo del registro de incidencias</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function select_grupo() {
+                                let id = $("#select_grupo").val();
+                                //alert(" Hola "+ id);
+                                let param = {id:id};
+                                $.ajax({
+                                type: "POST",
+                                url:"modelo/modelo_mostrar_datos.php",
+                                data: param,
+                                beforeSend: function(objeto){
+                                },
+                                success: function(data)
+                                {
+                                $("#panel_incidencias").html(data);
+                                }
+                                });
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion btn_guardarIncidencias()</h3>
+                        <p>Esta funcion, se guardan los reportes de incidencias que se generan del grupo</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function btn_guardarIncidencias() {
+                                let id = $("#id").val();
+                                let grupo = $('#select_grupo').val();
+                                let aula = $('#aula').val();
+                                let carrera = $('#carrera').val();
+                                let catedratico = $('#catedratico').val();
+                                let horario = $('#hora').val();
+                                let jefeGrupo = $('#jefeG').val();
+                                let reporte = $('#reporte').val();
+
+                                let ob = {id:id, grupo:grupo, aula:aula, carrera:carrera, catedratico:catedratico,
+                                horario:horario, jefeGrupo:jefeGrupo, reporte:reporte};
+
+                                $.ajax({
+                                type: "POST",
+                                url:"modelo/modelo_guardarIncidencias.php",
+                                data: ob,
+                                beforeSend: function(ob){
+
+                                },
+                                success: function(data)
+                                {
+
+                                $("#panel_incidencias").html(data);
+
+                                }
+
+                                });
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion btn_editarMaestro()</h3>
+                        <p>Esta funcion, permite editar el registro en la tabla maestro</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function btn_editarMaestro(id) {
+                                let parametro = {"id": id};
+                                $.ajax({
+                                type: "POST",
+                                url: "view_maesros.php",
+                                data: parametro,
+                                success: function (response) {
+                                $("#resultado").html(response);
+                                }
+                                }).responseText;
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion guardarEdicion()</h3>
+                        <p>Esta funcion, permite guardar los datos de edicion del registro en la tabla maestros</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function guardarEdicion(){
+                                let id =$("#id").val();
+                                let clave = $("#claveMaestro").val();
+                                let nombre = $("#nombreMaestro").val();
+                                let apellido = $("#apellidoMaestro").val();
+                                let telefonoCelular = $("#celularMaestro").val();
+                                let telefonoCasa = $("#casaMaestro").val();
+                                let telefonoOficina = $("#oficinaMaestro").val();
+                                let titulo = $("#tituloMaestro").val();
+                                let correo = $("#correoMaestro").val();
+
+                                let ob = {"id":id, "clave":clave, "nombre":nombre, "apellido":apellido, "telefonoCelular":telefonoCelular, "telefonoCasa":telefonoCasa,
+                                "telefonoOficina":telefonoOficina, "titulo":titulo, "correo":correo};
+
+                                $.ajax({
+                                type: "POST",
+                                url:"./modelo/modelo_guardar_edicion.php",
+                                data: ob,
+                                beforeSend: function(ob){
+
+                                },
+                                success: function(data)
+                                {
+
+                                $("#panel_guardar_edicion").html(data);
+                                $('#myModal_Profesores_Editar').css('display','none');
+                                }
+
+                                });
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>busqueda()</h3>
+                        <p>Esta funcion, permite buscar en la base de datos de la tabla maestros</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                try {
+                                $("#busqueda").on('keyup', function () {
+                                let aBuscar = $("#busqueda").val();
+                                let parametro = {
+                                "aBuscar": aBuscar
+                                };
+                                $.ajax({
+                                type: "POST",
+                                url: "busquedaMaestro.php",
+                                data: parametro,
+                                success: function (response) {
+                                $("#tabla").html(response);
+                                }
+                                }).responseText;
+                                }).keyup();
+                                } catch (e) {
+                                }
+                            </code>
+                        </pre>
+
+                        <h3>funcion guardarMaestro()</h3>
+                        <p>Esta funcion, permite guardar los datos del registro de la tabla maestro</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function guardarMaestro() {
+                                let id = $('#id').val();
+                                let clave  = $('#clave').val();
+                                let nombre = $('#nombre').val();
+                                let apellido = $('#apellido').val();
+                                let telefonoCelular = $('#celular').val();
+                                let telefonoCasa = $('#casa').val();
+                                let telefonoOficina  = $('#oficina').val();
+                                let titulo  = $('#titulo').val();
+                                let correo = $('#correo').val();
+
+                                let parametro = {
+                                "id":id,
+                                "clave":clave,
+                                "nombre":nombre,
+                                "apellido":apellido,
+                                "telefonoCelular":telefonoCelular,
+                                "telefonoCasa":telefonoCasa,
+                                "telefonoOficina":telefonoOficina,
+                                "titulo":titulo,
+                                "correo":correo
+                                };
+                                $.ajax(
+                                {
+                                type:"POST",
+                                url:"modelo/modelo_guardarMaestro.php",
+                                data:parametro,
+                                success: function (respuesta) {
+                                $('#panel_maestros').html(respuesta);
+                                }
+                                }
+                                ).responseText;
+                                }
+
+                            </code>
+                        </pre>
+
+                        <h3>funcion modificarModal()</h3>
+                        <p>Esta funcion, activa el modal para poder traer los datos y poder modificar en la tabla maestros</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function  modificar(id) {
+
+                                //Activar el modal
+
+                                let patametro = {"id":id};
+                                $.ajax(
+                                {
+                                type: 'POST',
+                                data : patametro,
+                                url: './plantillas/modalMaestros.php',
+                                success: function (respuesta) {
+                                $('#respuestaModal').html(respuesta);
+                                }
+                                }
+                                ).responseText;
+                                }
+
+                            </code>
+                        </pre>
+
+                        <h3>funcion eliminarMaestros()</h3>
+                        <p>Esta funcion, permite eliminar un registro de la tabla maestros</p>
+                        <pre style="background-color: #fafafa;">
+                            <code  class="text-black-50">
+                                function eliminarMaestro(id) {
+                                let ob = {'id':id};
+                                swal({
+                                title: "Esta seguro de cancelar",
+                                type: "warning",
+                                showCancelButton: true,
+                                confirmButtonClass: "btn-danger",
+                                confirmButtonText: "Aceptar",
+                                cancelButtonText: "Cancelar",
+                                closeOnConfirm: false,
+                                closeOnCancel: false
+                                },
+                                function(isConfirm) {
+                                if (isConfirm) {
+                                swal("Modificado", "Modificacion Correcta", "success");
+                                $.ajax({
+                                type:'POST',
+                                data:ob,
+                                url:'modelo/modelo_eliminar_maestro.php',
+                                success:function (respuesta) {
+                                $('#respuestaModal').html(respuesta);
+                                }
+                                }
+                                )
+                                } else {
+                                swal("Cancelar", "Cancelacion correcta", "error");
+                                }
+                                });
+                                }
+
+                            </code>
+                        </pre>
+
+
+
+                    </article>
+
+                </section>
+
+
+
+                <section class="light_row light_bottom">
+
+
+
+                </section>
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
 
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
+
+
+
 </html>

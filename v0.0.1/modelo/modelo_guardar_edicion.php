@@ -3,18 +3,20 @@
 require_once '../../Server/Server.php';
 $objServer = new Server();
 
+$id= $_POST['id'];
 $clave = $_POST['clave'];
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
-$telCelular = $_POST['telefonoCelular'];
-$telCasa = $_POST['telefonoCasa'];
-$telOficina = $_POST['telefonoOficina'];
+$telefonoCelular = $_POST['telefonoCelular'];
+$telefonoCasa = $_POST['telefonoCasa'];
+$telefonoOficina = $_POST['telefonoOficina'];
 $titulo = $_POST['titulo'];
 $correo = $_POST['correo'];
 
-$query = "INSERT INTO maestros (clave, nombre, apellido, telefonoCelular, telefonoCasa, telefonoOficina, titulo, correo) VALUES ('$clave','$nombre','$apellido','$telCelular','$telCasa','$telOficina','$titulo','$correo')";
+$query = "UPDATE maestros set clave = '$clave', nombre = '$nombre', apellido = '$apellido', telefonoCelular = '$telefonoCelular', telefonoCasa = '$telefonoCasa', 
+telefonoOficina= '$telefonoOficina', titulo = '$titulo', correo = '$correo' where id = '$id'";
 
-if($ejecutarQuery = mysqli_query($objServer->connection(),$query)){
+if ($ejecutar = mysqli_query($objServer->connection(), $query)){
     ?>
     <script>
         swal("Enviado", "Su registro se envio correctamente", "success")
@@ -44,3 +46,5 @@ if($ejecutarQuery = mysqli_query($objServer->connection(),$query)){
     </script>
     <?php
 }
+
+
