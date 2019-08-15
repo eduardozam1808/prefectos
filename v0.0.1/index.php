@@ -92,6 +92,9 @@ $objServer = new Server();
         </div>
     </div>
 </div>
+<div id="resultadoEventos">
+
+</div>
 
 <!--<button onclick="enviar()" class="btn btn-dark">Enviar</button>-->
 
@@ -116,13 +119,7 @@ $objServer = new Server();
 <script src="assets/js/theme.js"></script>
 <script src="assets/js/ajaxLib.js"></script>
 <script>
-
-
-
-
-
     function tiempo() {
-
         $.ajax(
             {
                 type: 'POST',
@@ -133,7 +130,6 @@ $objServer = new Server();
             }
         ).responseText;
     }
-
     setInterval('tiempo()',1000);
 
     function guardarTiempoRetardo() {
@@ -164,7 +160,7 @@ $objServer = new Server();
             url: "evento.php",
             data: parametro,
             success: function (response) {
-                $("#resultado").html(response);
+                $("#resultadoEventos").html(response);
             }
         }).responseText;
     }
@@ -176,7 +172,6 @@ $objServer = new Server();
             let parametro = {
                 "aBuscar": aBuscar,
                 "hora":hora
-
             };
             $.ajax({
                 type: "POST",
@@ -193,7 +188,6 @@ $objServer = new Server();
 
     function select_grupo() {
         let id = $("#select_grupo").val();
-        //alert(" Hola "+ id);
         let param = {id:id};
         $.ajax({
             type: "POST",
@@ -203,7 +197,6 @@ $objServer = new Server();
             },
             success: function(data)
             {
-
                 $("#panel_incidencias").html(data);
             }
         });
@@ -218,7 +211,6 @@ $objServer = new Server();
         let horario = $('#hora').val();
         let jefeGrupo = $('#jefeG').val();
         let reporte = $('#reporte').val();
-
         let ob = {id:id, grupo:grupo, aula:aula, carrera:carrera, catedratico:catedratico, horario:horario, jefeGrupo:jefeGrupo, reporte:reporte};
 
         $.ajax({
@@ -226,15 +218,11 @@ $objServer = new Server();
             url:"modelo/modelo_guardarIncidencias.php",
             data: ob,
             beforeSend: function(ob){
-
             },
             success: function(data)
             {
-
                 $("#panel_incidencias").html(data);
-
             }
-
         });
     }
     
@@ -243,7 +231,6 @@ $objServer = new Server();
         document.getElementById('busqueda-asistencia').style.display = 'none';
         document.getElementById('tabla2').style.display = 'block';
         document.getElementById('busqueda-maestros').style.display = 'block';
-
     }
     
     function tablaAsistencia() {
@@ -254,7 +241,6 @@ $objServer = new Server();
     }
 
     function btn_editarMaestro(id) {
-
         let parametro = {"id": id};
         $.ajax({
             type: "POST",
@@ -265,7 +251,6 @@ $objServer = new Server();
             }
         }).responseText;
     }
-
 </script>
 </body>
 

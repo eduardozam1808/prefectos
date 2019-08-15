@@ -1,6 +1,7 @@
 <?php
 include_once '../Server/Server.php';
 $objServer = new Server();
+session_start();
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
@@ -11,7 +12,7 @@ $ejecutarQuery = mysqli_query($objServer->connection(), $query);
 while ($dato = mysqli_fetch_assoc($ejecutarQuery)) {
 
     if ($dato['contrasena'] === $contrasena) {
-
+        $_SESSION['prefectoNombre'] = $dato['nombre'].' '.$dato['apellido'];
         $query = "SELECT *from versiones WHERE estable = 1";
         $ejecutarQuery = mysqli_query($objServer->connection(), $query);
         $dato = mysqli_fetch_assoc($ejecutarQuery);

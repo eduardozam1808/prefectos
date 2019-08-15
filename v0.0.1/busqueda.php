@@ -28,7 +28,12 @@ if ($buscar === '') {
             $query = "SELECT *from asistencia WHERE horario = '$hora'";
             if ($ejecutar = mysqli_query($objServer->connection(), $query)) {
                 while ($datos = mysqli_fetch_assoc($ejecutar)) {
-                    echo "<tr>";
+                    if($datos['problema'] === '1'){
+                        echo "<tr style='background-color:rgba(244, 67, 54, 0.1);'>";
+                    }else{
+                        echo "<tr style='background-color:rgba(255, 255, 255, 0.1);'>";
+                    }
+
                     echo "<td>" . $datos['aula'] . "</td>";
                     echo "<td>" . $datos['grupo'] . "</td>";
                     echo "<td>" . $datos['carrera'] . "</td>";
@@ -114,7 +119,11 @@ if ($buscar === '') {
             $query = "SELECT *from asistencia WHERE  catedratico LIKE '%$buscar%' or aula like '%$buscar%' ";
             if ($ejecutar = mysqli_query($objServer->connection(), $query)) {
                 while ($datos = mysqli_fetch_assoc($ejecutar)) {
-                    echo "<tr>";
+                    if($datos['problema'] === '1'){
+                        echo "<tr style='background-color:rgba(244, 67, 54, 0.1);'>";
+                    }else{
+                        echo "<tr style='background-color:rgba(255, 255, 255, 0.1);'>";
+                    }
                     echo "<td>" . $datos['aula'] . "</td>";
                     echo "<td>" . $datos['grupo'] . "</td>";
                     echo "<td>" . $datos['carrera'] . "</td>";

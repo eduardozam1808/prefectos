@@ -28,6 +28,13 @@
         </div>
 
     </div>
+    <div id="respuesta">
+
+    </div>
+
+    <div id="IncidenteRespuesta">
+
+    </div>
 
 
 
@@ -55,6 +62,38 @@
             }).responseText;
         }).keyup();
     } catch (e) {
+    }
+
+    function ver(id) {
+        let parametro = {"id":id};
+        $.ajax(
+            {
+                type:"POST",
+                data:parametro,
+                url:"modales/modalViewDirector.php",
+                success: function (respuesta) {
+                    $('#respuesta').html(respuesta);
+                }
+            }
+        ).responseText;
+    }
+    function cerrar() {
+        $('#modalAsistecia').css('display','none');
+    }
+
+    function autorizarCambio(id) {
+        let parametro = {"id":id};
+        $.ajax(
+            {
+                type: 'POST',
+                data: parametro,
+                url: 'modelo/modeloAutorizacionIncidente.php',
+                success: function (respuesta) {
+                    cerrar();
+                    $('#IncidenteRespuesta').html(respuesta);
+                }
+            }
+        ).responseText;
     }
 </script>
 </body>
