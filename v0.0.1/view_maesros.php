@@ -8,7 +8,7 @@
             <span class="input-group-text">Buscar&nbsp;</span>
         </div>
         <input class="form-control mr-3" type="text" id="busqueda">
-        <button class="boton btn btn-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>
+        <!--<button class="boton btn btn-success" data-backdrop="static" data-toggle="modal" data-target="#myModal_Profesores">Registrar</button>-->
         <div class="input-group-append"></div>
     </div>
 
@@ -171,6 +171,23 @@
         ).responseText;
     }
 
+    function  verMaestro(id) {
+
+        //Activar el modal
+
+        let patametro = {"id":id};
+        $.ajax(
+            {
+                type: 'POST',
+                data : patametro,
+                url: './plantillas/modal_ver_maestros.php',
+                success: function (respuesta) {
+                    $('#respuestaModal').html(respuesta);
+                }
+            }
+        ).responseText;
+    }
+
     function  modificar(id) {
 
        //Activar el modal
@@ -191,8 +208,12 @@
     function cerrarModalMaestros() {
         $('#myModal_Profesores_Editar').css('display','none');
     }
+
+    function cerrarModalVer() {
+        $('#myModal_verProfesores').css('display','none');
+    }
     
-    function eliminarMaestro(id) {
+    /*function eliminarMaestro(id) {
         let ob = {'id':id};
         swal({
                 title: "Esta seguro de cancelar",
@@ -220,7 +241,7 @@
                     swal("Cancelar", "Cancelacion correcta", "error");
                 }
         });
-    }
+    }*/
 </script>
 
 

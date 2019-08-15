@@ -40,29 +40,25 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v0.0.1/assets/css/untitled.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="241" selection-start-line="241" selection-end-line="241" />
+            <state relative-caret-position="306">
+              <caret line="263" column="1" selection-start-line="263" selection-start-column="1" selection-end-line="263" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v0.0.1/busquedaMaestro.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+            <state relative-caret-position="153">
+              <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
               <folding>
-                <element signature="e#1224#1247#0#HTML" expanded="true" />
+                <element signature="e#332#376#0#HTML" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="e#3029#3073#0#HTML" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -70,10 +66,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/documentacion.css">
+        <entry file="file://$PROJECT_DIR$/v0.0.1/busqueda.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="86" />
+            <state relative-caret-position="2414">
+              <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -81,17 +77,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v0.0.1/view_maesros.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="210" selection-start-line="210" selection-end-line="210" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v0.0.1/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v0.0.1/index.php">
+        <entry file="file://$PROJECT_DIR$/v0.0.1/plantillas/modalMaestros.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="494">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="103" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v0.0.1/plantillas/modal_ver_maestros.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="51" column="109" selection-start-line="51" selection-start-column="109" selection-end-line="51" selection-end-column="109" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#li#1;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#li#3;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +135,8 @@
       <find>scr</find>
       <find>inpu</find>
       <find>na</find>
+      <find>img</find>
+      <find>nobu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,15 +160,16 @@
         <option value="$USER_HOME$/Desktop/RESPALDO/solo un instante/web/aviso-privacidad.html" />
         <option value="$PROJECT_DIR$/doc/documentacion.css" />
         <option value="$PROJECT_DIR$/doc/funciones.html" />
-        <option value="$PROJECT_DIR$/v0.0.1/index.php" />
         <option value="$PROJECT_DIR$/v0.0.1/busqueda.php" />
         <option value="$PROJECT_DIR$/v0.0.1/view_maesros.php" />
-        <option value="$PROJECT_DIR$/v0.0.1/assets/css/untitled.css" />
         <option value="$PROJECT_DIR$/v0.0.1/busquedaMaestro.php" />
+        <option value="$PROJECT_DIR$/v0.0.1/plantillas/modal_ver_maestros.php" />
+        <option value="$PROJECT_DIR$/v0.0.1/assets/css/untitled.css" />
+        <option value="$PROJECT_DIR$/v0.0.1/index.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1280" />
@@ -160,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,23 +192,13 @@
             <path>
               <item name="prefectos" type="b2602c69:ProjectViewProjectNode" />
               <item name="prefectos" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prefectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prefectos" type="462c0819:PsiDirectoryNode" />
               <item name="v0.0.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prefectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prefectos" type="462c0819:PsiDirectoryNode" />
-              <item name="v0.0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +207,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Prefectos1.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -274,26 +285,21 @@
       <workItem from="1565044253696" duration="4569000" />
       <workItem from="1565101770654" duration="16353000" />
       <workItem from="1565192357962" duration="11709000" />
-      <workItem from="1565205251216" duration="47369000" />
+      <workItem from="1565205251216" duration="48072000" />
+      <workItem from="1565755404375" duration="17392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47369000" />
+    <option name="totallyTimeSpent" value="65464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31876606" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32326478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50064266" side_tool="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Database Console" sideWeight="0.4993573" weight="0.32974428" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -301,10 +307,16 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" weight="0.32969153" />
+      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4993573" weight="0.32974428" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50064266" side_tool="true" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -471,13 +483,6 @@
         <state relative-caret-position="-339" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v0.0.1/plantillas/modalMaestros.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="113" column="31" lean-forward="true" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v0.0.1/buscarReportes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -542,27 +547,6 @@
     <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/v0.0.1/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v0.0.1/view_maesros.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v0.0.1/busqueda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="150" column="72" selection-start-line="150" selection-start-column="72" selection-end-line="150" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/documentacion.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -570,27 +554,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/v0.0.1/view_maesros.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v0.0.1/plantillas/modalMaestros.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="103" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v0.0.1/plantillas/modal_ver_maestros.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="51" column="109" selection-start-line="51" selection-start-column="109" selection-end-line="51" selection-end-column="109" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#li#1;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#li#3;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/v0.0.1/assets/css/untitled.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        <state relative-caret-position="306">
+          <caret line="263" column="1" selection-start-line="263" selection-start-column="1" selection-end-line="263" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v0.0.1/busqueda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/v0.0.1/busquedaMaestro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+        <state relative-caret-position="153">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
           <folding>
-            <element signature="e#1224#1247#0#HTML" expanded="true" />
+            <element signature="e#332#376#0#HTML" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="e#3029#3073#0#HTML" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v0.0.1/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
         </state>
       </provider>
     </entry>
